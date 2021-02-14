@@ -10,12 +10,13 @@ public class Hello {
     public static void main(String[] args) {
         int index = 1;
         int count = 0;
-        for (; index < 10; index ++){
+        for (; index < 5; index ++){
             if (index % 2 == 0){
-                count *= count;
+                count *= index;
+            }else {
+                count += index;
             }
-            count += index;
         }
-        System.out.println("count is " + count);
+        System.out.println("at last, count is " + count);
     }
 }
