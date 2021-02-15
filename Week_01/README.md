@@ -204,7 +204,7 @@ public static void main(java.lang.String[]);
 
 - goto 26:
   - 无条件跳转指令
-  - 26: 指令标号，表示跳转到标号为26的指令继续执行
+  - 26: 指令标号，表示跳转到索引为26的指令继续执行
 
 - iadd:
   - i: int类型值
@@ -234,3 +234,12 @@ public static void main(java.lang.String[]);
   - 常量入栈指令，将常量压入操作数栈
   - 该指令可以接收一个8位的参数，该参数指向常量池中的int、float或者String的索引，将指定的内容压入堆栈
   - **#5**，接收的操作数，是为指向常量池的索引
+  
+### 参考资料
+
+- [JVM字节码指令集概述](https://segmentfault.com/a/1190000037628881)
+- 深入理解Java虚拟机
+
+## 第二题
+
+自定义一个 Classloader，加载一个 Hello.xlass 文件，执行 hello 方法，此文件内容是一个 Hello.class 文件所有字节（x=255-x）处理后的文件。
